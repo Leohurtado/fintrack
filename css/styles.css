@@ -555,3 +555,129 @@ body {
     }
 
 }
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(16, 21, 37, 0.55);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+
+.modal-content {
+    width: 100%;
+    max-width: 430px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.modal-header h2 {
+    font-size: 21px;
+}
+
+
+.close-button {
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #f2f3f8;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+#expenseForm {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+#expenseForm label {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+
+#expenseForm input,
+#expenseForm select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #dfe4ec;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    background: white;
+}
+
+
+#expenseForm input:focus,
+#expenseForm select:focus {
+    border-color: #635bff;
+}
+
+
+.modal-button {
+    margin-top: 15px;
+
+    width: 100%;
+}
