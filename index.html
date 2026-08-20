@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinTrack | Finanzas personales</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <h1 class="logo">
+                Fin<span>Track</span>
+            </h1>
+
+            <nav class="menu">
+
+                <button class="menu-item active">
+                    🏠 Dashboard
+                </button>
+
+                <button class="menu-item">
+                    💸 Movimientos
+                </button>
+
+                <button class="menu-item">
+                    💰 Presupuestos
+                </button>
+
+                <button class="menu-item">
+                    🎯 Metas
+                </button>
+
+                <button class="menu-item">
+                    📊 Reportes
+                </button>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main">
+
+            <!-- ENCABEZADO -->
+            <header class="header">
+
+                <div>
+                    <h2>¡Hola! 👋</h2>
+
+                    <p>
+                        Este es el resumen de tus finanzas.
+                    </p>
+                </div>
+
+                <button class="btn-primary">
+                    + Registrar gasto
+                </button>
+
+            </header>
+
+
+            <!-- TARJETAS -->
+            <section class="cards">
+
+                <div class="card balance">
+
+                    <p>Dinero disponible</p>
+
+                    <h3>
+                        S/ 2,450.00
+                    </h3>
+
+                    <span>
+                        ↑ 8.4% este mes
+                    </span>
+
+                </div>
+
+
+                <div class="card">
+
+                    <p>Ingresos</p>
+
+                    <h3>
+                        S/ 4,000.00
+                    </h3>
+
+                    <span class="positive">
+                        ↑ 5.2%
+                    </span>
+
+                </div>
+
+
+                <div class="card">
+
+                    <p>Gastos</p>
+
+                    <h3>
+                        S/ 1,550.00
+                    </h3>
+
+                    <span class="negative">
+                        ↑ 2.1%
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTENIDO -->
+            <section class="content-grid">
+
+
+                <!-- GASTOS -->
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Gastos del mes
+                        </h3>
+
+                        <select>
+
+                            <option>
+                                Agosto 2026
+                            </option>
+
+                            <option>
+                                Julio 2026
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="bar" style="height:40%;">
+                            <span>Lun</span>
+                        </div>
+
+                        <div class="bar" style="height:65%;">
+                            <span>Mar</span>
+                        </div>
+
+                        <div class="bar" style="height:50%;">
+                            <span>Mié</span>
+                        </div>
+
+                        <div class="bar" style="height:75%;">
+                            <span>Jue</span>
+                        </div>
+
+                        <div class="bar" style="height:55%;">
+                            <span>Vie</span>
+                        </div>
+
+                        <div class="bar active" style="height:85%;">
+                            <span>Sáb</span>
+                        </div>
+
+                        <div class="bar" style="height:35%;">
+                            <span>Dom</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CATEGORÍAS -->
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Gastos por categoría
+                        </h3>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-icon">
+                            🍔
+                        </div>
+
+                        <div class="category-info">
+
+                            <strong>
+                                Comida
+                            </strong>
+
+                            <div class="progress">
+                                <div style="width:78%;"></div>
+                            </div>
+
+                        </div>
+
+                        <strong>
+                            S/ 450
+                        </strong>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-icon">
+                            🎮
+                        </div>
+
+                        <div class="category-info">
+
+                            <strong>
+                                Entretenimiento
+                            </strong>
+
+                            <div class="progress">
+                                <div style="width:49%;"></div>
+                            </div>
+
+                        </div>
+
+                        <strong>
+                            S/ 280
+                        </strong>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-icon">
+                            🚕
+                        </div>
+
+                        <div class="category-info">
+
+                            <strong>
+                                Transporte
+                            </strong>
+
+                            <div class="progress">
+                                <div style="width:39%;"></div>
+                            </div>
+
+                        </div>
+
+                        <strong>
+                            S/ 220
+                        </strong>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-icon">
+                            🛒
+                        </div>
+
+                        <div class="category-info">
+
+                            <strong>
+                                Compras
+                            </strong>
+
+                            <div class="progress">
+                                <div style="width:61%;"></div>
+                            </div>
+
+                        </div>
+
+                        <strong>
+                            S/ 350
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- MOVIMIENTOS -->
+            <section class="panel movements">
+
+                <div class="panel-header">
+
+                    <h3>
+                        Últimos movimientos
+                    </h3>
+
+                    <button class="view-button">
+                        Ver todos
+                    </button>
+
+                </div>
+
+
+                <div class="movement">
+
+                    <div class="category-icon">
+                        🍔
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Cena con amigos
+                        </strong>
+
+                        <p>
+                            Comida · Hoy
+                        </p>
+
+                    </div>
+
+                    <strong class="negative">
+                        - S/ 45.00
+                    </strong>
+
+                </div>
+
+
+                <div class="movement">
+
+                    <div class="category-icon">
+                        🎬
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Cine
+                        </strong>
+
+                        <p>
+                            Entretenimiento · Ayer
+                        </p>
+
+                    </div>
+
+                    <strong class="negative">
+                        - S/ 32.00
+                    </strong>
+
+                </div>
+
+
+                <div class="movement">
+
+                    <div class="category-icon">
+                        💼
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Pago recibido
+                        </strong>
+
+                        <p>
+                            Ingreso · Ayer
+                        </p>
+
+                    </div>
+
+                    <strong class="positive">
+                        + S/ 500.00
+                    </strong>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
