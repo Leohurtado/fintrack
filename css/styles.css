@@ -1,1 +1,557 @@
+/* =========================
+   FINTRACK - ESTILOS
+========================= */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* =========================
+   ESTRUCTURA PRINCIPAL
+========================= */
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 230px;
+    background: #101525;
+    color: white;
+    padding: 30px 18px;
+}
+
+.logo {
+    font-size: 25px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+.logo span {
+    color: #7c6cff;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item {
+    border: none;
+    background: transparent;
+    color: #aeb6c8;
+
+    text-align: left;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    background: #292d43;
+    color: white;
+}
+
+.menu-item.active {
+    background: #292d43;
+    color: white;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.main {
+    flex: 1;
+    padding: 35px;
+    max-width: 1400px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.header h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #7c8799;
+    font-size: 14px;
+}
+
+
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+
+.btn-primary {
+    border: none;
+
+    background: #635bff;
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #5149e6;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.card {
+    background: white;
+
+    border: 1px solid #e8ecf2;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(28, 39, 70, 0.05);
+}
+
+.card p {
+    color: #7c8799;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 28px;
+
+    margin-bottom: 7px;
+}
+
+.card span {
+    font-size: 12px;
+}
+
+
+/* =========================
+   TARJETA SALDO
+========================= */
+
+.balance {
+    background:
+        linear-gradient(
+            135deg,
+            #5e57ee,
+            #8178ff
+        );
+
+    color: white;
+
+    border: none;
+}
+
+.balance p {
+    color: #dddafe;
+}
+
+.balance span {
+    color: #d9ffef;
+}
+
+
+/* =========================
+   COLORES
+========================= */
+
+.positive {
+    color: #20b486;
+}
+
+.negative {
+    color: #ef5b6b;
+}
+
+
+/* =========================
+   GRID PRINCIPAL
+========================= */
+
+.content-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PANELES
+========================= */
+
+.panel {
+    background: white;
+
+    border: 1px solid #e8ecf2;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(28, 39, 70, 0.05);
+}
+
+.panel-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.panel-header h3 {
+    font-size: 16px;
+}
+
+.panel-header select {
+    border: 1px solid #e1e5ec;
+
+    border-radius: 8px;
+
+    padding: 7px;
+
+    background: white;
+
+    color: #7c8799;
+}
+
+
+/* =========================
+   GRÁFICO
+========================= */
+
+.chart {
+    height: 210px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 15px;
+
+    padding:
+        10px
+        10px
+        25px;
+}
+
+.bar {
+    flex: 1;
+
+    max-width: 40px;
+
+    background: #ddd9ff;
+
+    border-radius:
+        8px
+        8px
+        3px
+        3px;
+
+    position: relative;
+
+    margin: auto;
+
+    transition: 0.2s;
+}
+
+.bar:hover {
+    background: #8b83ff;
+}
+
+.bar.active {
+    background: #635bff;
+}
+
+.bar span {
+    position: absolute;
+
+    bottom: -23px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 10px;
+
+    color: #7c8799;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.category {
+    display: grid;
+
+    grid-template-columns:
+        35px
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.category-icon {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 10px;
+
+    background: #f2f3f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 17px;
+}
+
+.category-info {
+    font-size: 12px;
+}
+
+.progress {
+    height: 6px;
+
+    background: #edf0f5;
+
+    border-radius: 10px;
+
+    margin-top: 6px;
+
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+
+    background: #635bff;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MOVIMIENTOS
+========================= */
+
+.movements {
+    margin-top: 0;
+}
+
+.movement {
+    display: grid;
+
+    grid-template-columns:
+        40px
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 0;
+
+    border-bottom:
+        1px solid #edf0f5;
+}
+
+.movement:last-child {
+    border-bottom: none;
+}
+
+.movement strong {
+    font-size: 13px;
+}
+
+.movement p {
+    color: #7c8799;
+
+    font-size: 11px;
+
+    margin-top: 3px;
+}
+
+.view-button {
+    border: none;
+
+    background: #f2f3f8;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    color: #5f6879;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .main {
+        padding: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .balance {
+        grid-column: span 2;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .app {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        flex-direction: row;
+
+        overflow-x: auto;
+    }
+
+    .menu-item {
+        white-space: nowrap;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .balance {
+        grid-column: auto;
+    }
+
+}
